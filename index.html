@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanzas</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+    <div id="container">
+        <h1 class="game-title">¡Juego de Adivinanzas!</h1>
+        <div id="nivel" class="game-message">
+            <h2 id="pregunta"></h2>
+            <p id="adivinanza"></p>
+           
+        </div>
+        <input type="text" id="respuesta" class="game-input" placeholder="Escribe tu respuesta" autocomplete="off" required>
+        <button onclick="comprobarRespuesta()" class="game-button">Responder</button>
+        <button onclick="siguienteAdivinanza()" class="game-button">Siguiente</button>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+    <div id="mensaje" class="mensaje"></div>
+    <script src="./js/index.js"></script> 
+</body>
+</html>
